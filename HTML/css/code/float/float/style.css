@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    padding: 50px;
+}
+h1{
+    
+    text-align: center;
+    
+    text-decoration: 3px wavy black underline;
+    
+    
+
+}
+figure{
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+.img1{
+    float: right;
+
+    
+}
+.img2{
+    float: left;
+}
+img{
+    border: 1px solid black;
+    height: 8rem;
+    box-sizing: border-box;
+}
+/* p{
+    clear: both;
+} */

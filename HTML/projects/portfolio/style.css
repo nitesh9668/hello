@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+    color: #ededed;
+    background-color:#081b29;
+   
+} 
+.navbar{
+
+    height: 3rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+    position: fixed;
+    text-decoration-line: none;
+    
+}
+.sidenav{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.navbar h1{
+    position: relative;
+    left: 4rem;
+    font-size: 30px;
+    color: #ededed;
+    
+}
+.navbar a{
+    color: #ededed;
+    text-decoration: none;
+    transition: .4s;
+}
+.navbar a:hover,
+.sidenav .active{
+    color: #00abf0;
+    
+
+}
+.leftcontent{
+    width: 70vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    
+    
+
+    
+
+
+}
+.leftcontent h1{
+    font-family: "Overpass", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    
+    top: 10px;
+
+}
+.leftcontent h3{
+    position: relative;
+    font-size: 35px;
+    color: #00abf0;
+    top:0;
+
+}
+.leftcontent p{
+    position: relative;
+    top:3rem;
+text-align: justify;
+}
+.leftcontent .box{
+    height: 50px;
+    width: 250px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.box .l{
+    width: 100px;
+    height: 40px;
+    color: black;
+
+    
+    
+    /* border: 1px solid brown; */
+}
+.box .r{
+    width: 100px;
+    height: 40px;
+    color: #00abf0;
+    /* border: 1px solid brown; */
+}
+
+.box .B{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid  #00abf0 ;
+    text-decoration: none;
+    
+    border-radius: 10px;
+    font-weight: 600;
+    
+}
+.box .B:hover,
+.box .l{
+    color:black;
+    background-color: #00abf0;
+    transition: all .5s linear ;
+    font-size: 20px
+
+}
+.icons{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
+    bottom: 18px;
+    text-decoration: none;
+    
+
+}
+.icons a i{
+    font-size: 30px;
+    color:  #00abf0;
+
+}
+.icons a i:hover{
+    font-size: 2rem;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+    
+}
+.maincontent{
+    display: flex;
+    flex-direction: row;
+}
+.rightcontent{
+    width: 30vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring-light {
+    
+
+    width: 350px; /* Set image size */
+    height: 350px;
+    border-radius: 50%; /* Make it circular */
+    border: 10px solid #fff; /* Optional border */
+    box-shadow: 0 0 20px 10px rgba(0, 128, 255, 0.8), /* Outer glow */
+                0 0 40px 20px rgba(0, 128, 255, 0.6); /* Extra glow */
+    overflow: hidden; /* Ensure the image stays inside */
+  }
+
+  .ring-light img {
+    width: 100%;
+    height: 100%;
+    left: 20px;
+    border-radius: 50%; /* Make the image circular */
+  }
+ 
+

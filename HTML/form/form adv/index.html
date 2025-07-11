@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>Resistration form of student</h1>
+    <hr>
+    <form action="main.java">
+        <div>
+            <label for="fname">First Name:    </label>
+            <input type="text" name="fname" id="fname" placeholder="Enter Your First Name" required>
+        </div><br>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name" required>
+        </div><br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="it should contain @" required>
+        </div><br>
+        <div>
+            <label for="mob">Mobile:</label>
+            <input type="number" name="mobno" id="mob" placeholder="only 10 digits are allowed"  maxlength="10" minlength="10">
+        </div><br>
+        <div>
+            Gender:
+
+            <input type="radio" name="gen" id="m">
+            <label for="m">Male</label>
+            <input type="radio" name="gen" id="f">
+            <label for="f">Female</label>
+            
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of Birth:  </label>
+            <input type="date" name="dob" id="dob" required>
+        </div><br>
+        <div>
+           <p>Address</p>
+            <textarea name="add" id="add" required></textarea >
+        
+        </div><br>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" required>
+        </div><br>
+        <div>
+            <label for="apin">Area pin:</label>
+            <input type="number" name="apin" id="apin" required>
+        </div>
+        <br>
+        <div>
+            <label for="state">state:</label>
+            <input type="text" name="state" id="state" value="Odisha" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="qual">Qualification:</label>
+            <select name="qual" id="qual" required>
+                <option value="">Select Qualification:</option>
+                <option value="Btech">Btech</option>
+                <option value="B.SC">B.SC</option>
+                <option value="M.SC">M.SC</option>
+                <option value="BE">BE</option>
+                <option value="DIPLOMA">Diploma</option>
+            </select>
+        </div><br>
+         <div>
+            <p>Specialization:</p>
+            <input type="checkbox" name="csc" id="csc">
+            <label for="csc">Computer Science</label>
+            <br>
+            <input type="checkbox" name="it" id="it">
+            <label for="it">Information Technology</label>
+            <br>
+            <input type="checkbox" name="ca" id="ca">
+            <label for="ca">Computer Architecture</label>
+            <br>
+            <input type="checkbox" name="tc" id="tc">
+            <label for="tc">Tele Communication</label>
+
+         </div><br>
+         <div>
+            <label for="psw">password:</label>
+            <input type="password" name="psw" id="psw" required>
+         </div>
+         <br>
+         <input type="submit" value="Registered">
+
+         <label for="em">Email:</label>
+         <input type="email" name="em" id="em">
+
+         <div>
+            <label for="brn">choose the course </label>
+            <select name="branch" id="brn" multiple>
+                <optgroup label="eng">
+                <option value="mech">mechanical</option>
+                <option value="tech">technicsal</option>
+                <option value="chem">chemical</option>
+                <option value="eee">eee</option>    
+                </optgroup>
+            </select>
+         </div>
+
+
+    </form>
+</body>
+</html>

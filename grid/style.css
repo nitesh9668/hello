@@ -1,0 +1,53 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 1200px;
+    
+    background-color: aqua;
+    display: grid;
+    /* grid column is width
+       grid row is height
+    */
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns:repeat(3,200px) ;  
+       
+      one problem is that in this method you always
+       calculate the width according to the container width to fill the gap
+    */
+     /* SO USE FR UNIT TO COVER THE width */
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: repeat(3,200px);
+    grid-gap: 30px;
+}
+.item{
+    font-size: 2rem;
+    color: bisque;
+    background-color: blue;
+    border: 2px solid white;
+}
+/* placing item 1 in the place of item 3 */
+ /* .items-1{ 
+    grid-column: 3/4;
+    grid-row:1/2 ;
+
+}
+.items-3{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.items-2{ 
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+ */
+  .items-1{
+     grid-area:3/3/4/4 ; 
+ }
+ .items-9{
+    grid-area:1/1/2/2 ;
+ } 
